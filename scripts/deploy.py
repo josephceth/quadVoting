@@ -9,7 +9,7 @@ def deployContract():
         publish_source=config["networks"][network.show_active()].get("verify", False),
     )
     print("Contract Deployed Successfully")
-    return contract.isVoter(getAccount()) == False
+    return contract
 
 
 def main():
